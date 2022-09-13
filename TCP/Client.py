@@ -1,6 +1,7 @@
 import socket
 import sys
 
+#Collecting data from CLI
 target_host = str(sys.argv[1])
 target_port = int(sys.argv[2])
 data_to_send = (open(sys.argv[3]).read()+"\r\n\r\n")
