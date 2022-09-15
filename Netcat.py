@@ -17,7 +17,7 @@ def execute(cmd):
         return output.decode()
     except OSError as err:
         os.chdir(shlex.split(cmd)[1])
-        output = str(f'Directory has been changed to: {shlex.split(cmd)[0]}')
+        output = str(f'Directory has been changed to: {shlex.split(cmd)[1]}')
         return output
 
 # NetCat object definition and methods
